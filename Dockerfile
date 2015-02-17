@@ -8,6 +8,9 @@ RUN \
   && rm -rf /var/lib/apt/lists/*
 
 ADD trigger.rb /
+RUN chmod 755 trigger.rb
+
+VOLUME ["/etc/puppet/environments"]
 
 EXPOSE 4567
 
