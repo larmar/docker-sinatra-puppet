@@ -14,4 +14,4 @@ VOLUME ["/etc/puppet/environments"]
 
 EXPOSE 4567
 
-CMD /trigger.rb
+CMD /trigger.rb -o 0.0.0.0
