@@ -64,7 +64,8 @@ post '/trigger-puppet.json' do
       %x{git reset --hard "origin/#{branchname}"}
     else
       # Instantiate a new environment from the current repository.
-    
+      
+      Dir.chdir ENVIRONMENT_BASEDIR
       puts "Creating new environment #{branchname}"
       %x{git clone #{source_repository} #{environment_path} --branch #{branchname}}
     end
