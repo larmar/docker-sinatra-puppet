@@ -11,6 +11,7 @@ ADD trigger.rb /
 RUN chmod 755 trigger.rb
 
 VOLUME ["/etc/puppet/environments"]
+VOLUME ["/root/.ssh"]
 
 EXPOSE 4567
 
