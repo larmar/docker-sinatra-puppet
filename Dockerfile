@@ -7,6 +7,6 @@ RUN \
   && apt-get install -y git \
   && rm -rf /var/lib/apt/lists/*
 
-ADD trigger.rb 
+ADD trigger.rb /
 
 EXPOSE 4567
