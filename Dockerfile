@@ -10,3 +10,5 @@ RUN \
 ADD trigger.rb /
 
 EXPOSE 4567
+
+CMD /trigger.rb
